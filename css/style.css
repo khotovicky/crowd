@@ -1,0 +1,97 @@
+@import "nullstyle.css";
+@import "fonts.css";
+@import "header.css";
+@import "running-line.css";
+@import "support.css";
+@import "stages.css";
+@import "participants.css";
+
+html {
+  --container: 521px;
+  --slot-for-marquee: 60px;
+  --wrapper-margin: 72px;
+}
+@media (max-width: 1260px) {
+  html {
+    --container: 335px;
+    --slot-for-marquee: 38px;
+  }
+}
+@media (max-width: 950px) {
+  html {
+    --wrapper-margin: 5.33vw;
+  }
+}
+
+body {
+  font-family: Golos Text;
+  overflow-x: hidden;
+  min-height: 100vh;
+  min-width: 375px;
+}
+
+.container {
+  max-width: calc(var(--container));
+}
+
+.wrapper {
+  padding: 0 calc(var(--wrapper-margin));
+  color: #313131;
+}
+
+.note {
+  font-size: 20px;
+  line-height: 1.2;
+  color: #3057a2;
+}
+
+.title {
+  font-family: Merriweather;
+  text-transform: uppercase;
+  font-size: 54px;
+  line-height: 1.2;
+}
+
+.carousel-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.previous-button {
+  background: url("../img/left_arrow.svg") no-repeat center/auto, #313131;
+}
+
+.next-button {
+  background: url("../img/right_arrow.svg") no-repeat center/auto, #313131;
+}
+
+footer {
+  background: #e9ded4;
+  opacity: 0.6;
+  font-size: 16px;
+  line-height: 1.2;
+  padding: 40px var(--wrapper-margin) 60px;
+  min-height: 150px;
+}
+
+@media (max-width: 950px) {
+  .note {
+    font-size: 18px;
+  }
+  .title {
+    font-size: 36px;
+  }
+  .carousel-button {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+@media (max-width: 700px) {
+  .wrapper {
+    max-width: 89.33vw;
+    padding: 0;
+    margin: 0 auto;
+  }
+}

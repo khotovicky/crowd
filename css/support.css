@@ -1,0 +1,177 @@
+html {
+  --table-border: 1px solid #d0d0d0;
+}
+
+.support {
+  padding: 80px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.support__text {
+  text-transform: uppercase;
+  font-family: Merriweather;
+  font-size: 36px;
+  line-height: 1.35;
+  text-align: left;
+}
+.support-highlighted {
+  font-weight: 700;
+  color: #f54932;
+}
+.support__lecture {
+  min-height: 250px;
+  padding-right: 458px;
+  background: url(../img/lecture.jpg) no-repeat right;
+}
+
+.support__text__part {
+  display: inline;
+}
+
+.support__game {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.support__game__content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.support__image {
+  flex: 1 0 49.8%;
+  height: 200%;
+  margin-left: -31px;
+}
+
+.table-container {
+  font-size: 20px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.tr {
+  display: flex;
+  border: var(--table-border);
+  border-right: none;
+  border-left: none;
+}
+
+.tr:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.tr:first-child .th,
+.tr:first-child .td {
+  padding-top: 0;
+}
+
+.tr:last-child .th,
+.tr:last-child .td {
+  padding-bottom: 0;
+}
+.tr:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.th {
+  flex: 0 0 306px;
+  color: rgba(49, 49, 49, 0.7);
+  padding: 17px 0;
+  border-right: var(--table-border);
+  align-items: center;
+}
+.td {
+  flex: 1 1 auto;
+  font-weight: 600;
+  padding: 17px 14px;
+  border-left: var(--table-border);
+  align-items: center;
+}
+
+.crossed-out {
+  text-decoration: line-through #f54932 2px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.non-crossed-out {
+  display: inline-block;
+}
+
+.caption {
+  padding: 46px 0 0 0;
+}
+
+@media (max-width: 1285px) {
+  .th,
+  .td {
+    display: flex;
+    line-height: 1.2;
+  }
+  .th {
+    flex: 0 0 53.5%;
+  }
+  .td {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .support {
+    padding: 80px 0 60px 0;
+    gap: 34px;
+  }
+  .support__lecture {
+    display: flex;
+    flex-direction: column;
+    gap: 261px;
+    padding: 0;
+  }
+  .support__text {
+    font-size: 28px;
+    background-size: 335px;
+    background-position: center;
+  }
+  .support__text__part {
+    display: block;
+  }
+  .support__game {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .support__image {
+    margin: 0 -5.33vw;
+  }
+  .support__game__content {
+    gap: 44px;
+  }
+  .tr {
+    display: block;
+  }
+  .th,
+  .td {
+    border: none;
+    display: inline-block;
+  }
+  .th {
+    padding: 14px 12px 12px 0;
+  }
+  .td {
+    padding: 0 0 16px 0;
+  }
+  .caption {
+    padding-top: 40px;
+  }
+}
